@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <title>Historial de Ventas - Horneados Herrera</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+
+    <header class="barra-superior">
+
+        <div class="nombre-panaderia">
+            Horneados Herrera
+        </div>
+
+        <nav class="navegacion">
+
+            <a href="index.html">
+                Inicio
+            </a>
+
+            <a href="inventario.html">
+                Inventario
+            </a>
+
+            <a href="ventas.html">
+                Ventas
+            </a>
+
+            <a href="historial.html" class="activo">
+                Historial
+            </a>
+
+        </nav>
+
+    </header>
+
+    <h2 class="titulo-historial">Ventas realizadas</h2>
+
+    <div class="filtros-historial">
+
+        <label for="buscadorHistorial">
+            Buscar venta:
+        </label>
+
+        <input
+            type="text"
+            id="buscadorHistorial"
+            placeholder="Buscar por folio o Producto..."
+        >
+
+        <br><br>
+
+        <label for="fechaDesde">
+            Desde:
+        </label>
+
+        <input
+            type="date"
+            id="fechaDesde"
+        >
+        
+        <label for="fechaHasta">
+            Hasta:
+        </label>
+
+        <input
+            type="date"
+            id="fechaHasta"
+        >
+
+        <button id="limpiarFiltros">
+            Limpiar filtros
+        </button>
+
+    </div>
+
+    <div class="resumen-ventas">
+
+        <div class="tarjeta-resumen">
+
+            <h3>Ventas</h3>
+
+            <p id="totalVentas">
+                0
+            </p>
+
+        </div>
+
+        <div class="tarjeta-resumen">
+
+            <h3>Ingresos</h3>
+
+            <p id="totalIngresos">
+                $0.00
+            </p>
+
+        </div>
+
+        <div class="tarjeta-resumen">
+
+            <h3>Productos vendidos</h3>
+
+            <p id="totalProductos">
+                0
+            </p>
+
+        </div>
+
+    </div>
+
+    <div id="historialVentas"></div>
+
+    <div id="paginacionHistorial"></div>
+
+    <script src="js/historial.js"></script>
+
+</body>
+
+    <footer class="pie-pagina">
+        <p>© Created by Juan Fernando Barrera Belmares.</p>
+    </footer>
+
+</html>

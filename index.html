@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Indice - Horneados Herrera</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" a href="css/estilos.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+<header class="barra-superior">
+
+    <div class="nombre-panaderia">
+        Horneados Herrera
+    </div>
+
+    <nav class="navegacion">
+
+        <a href="index.html" class="activo">
+            Inicio
+        </a>
+
+        <a href="inventario.html">
+            Inventario
+        </a>
+
+        <a href="ventas.html">
+            Ventas
+        </a>
+
+        <a href="historial.html">
+            Historial
+        </a>
+
+    </nav>
+
+</header>
+
+<main class="inicio">
+
+
+     <div class="logo-inicio">
+        <img src="img/logo.png" alt="Logo de Horneados Herrera">
+    </div>
+
+    <h1>Sistema de Inventario y Punto de Venta</h1>
+
+    <br><br>
+
+    <div class="opciones-inicio">
+
+        <a href="inventario.html">
+            <button>Inventario</button>
+        </a>
+
+        <a href="ventas.html">
+            <button>Ventas</button>
+        </a>
+
+        <a href="historial.html">
+            <button>Historial de ventas</button>
+        </a>
+
+    </div>
+
+</main>
+
+</body>
+
+    <footer class="pie-pagina">
+        <p>© Created by Juan Fernando Barrera Belmares.</p>
+    </footer>
+
+
+<script>
+    if ("serviceWorker" in navigator) {
+
+        window.addEventListener("load", function() {
+
+            navigator.serviceWorker
+                .register("./service-worker.js")
+                .then(function() {
+                    console.log("Service Worker registrado correctamente.");
+                })
+                .catch(function(error) {
+                    console.log("Error al registrar Service Worker:", error);
+                });
+
+        });
+
+    }
+</script>
+</html>
